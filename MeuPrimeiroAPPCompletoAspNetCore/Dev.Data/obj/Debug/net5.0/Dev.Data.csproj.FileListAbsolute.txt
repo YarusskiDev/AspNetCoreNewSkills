@@ -1,0 +1,15 @@
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\MeuPrimeiroAPPCompletoAspNetCore\Dev.Data\bin\Debug\net5.0\Dev.Data.deps.json
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\MeuPrimeiroAPPCompletoAspNetCore\Dev.Data\bin\Debug\net5.0\Dev.Data.dll
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\MeuPrimeiroAPPCompletoAspNetCore\Dev.Data\bin\Debug\net5.0\ref\Dev.Data.dll
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\MeuPrimeiroAPPCompletoAspNetCore\Dev.Data\bin\Debug\net5.0\Dev.Data.pdb
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\MeuPrimeiroAPPCompletoAspNetCore\Dev.Data\bin\Debug\net5.0\Dev.Business.dll
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\MeuPrimeiroAPPCompletoAspNetCore\Dev.Data\bin\Debug\net5.0\Dev.Business.pdb
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\MeuPrimeiroAPPCompletoAspNetCore\Dev.Data\obj\Debug\net5.0\Dev.Data.csproj.AssemblyReference.cache
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\MeuPrimeiroAPPCompletoAspNetCore\Dev.Data\obj\Debug\net5.0\Dev.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\MeuPrimeiroAPPCompletoAspNetCore\Dev.Data\obj\Debug\net5.0\Dev.Data.AssemblyInfoInputs.cache
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\MeuPrimeiroAPPCompletoAspNetCore\Dev.Data\obj\Debug\net5.0\Dev.Data.AssemblyInfo.cs
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\MeuPrimeiroAPPCompletoAspNetCore\Dev.Data\obj\Debug\net5.0\Dev.Data.csproj.CoreCompileInputs.cache
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\MeuPrimeiroAPPCompletoAspNetCore\Dev.Data\obj\Debug\net5.0\Dev.Data.csproj.CopyComplete
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\MeuPrimeiroAPPCompletoAspNetCore\Dev.Data\obj\Debug\net5.0\Dev.Data.dll
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\MeuPrimeiroAPPCompletoAspNetCore\Dev.Data\obj\Debug\net5.0\ref\Dev.Data.dll
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\MeuPrimeiroAPPCompletoAspNetCore\Dev.Data\obj\Debug\net5.0\Dev.Data.pdb
