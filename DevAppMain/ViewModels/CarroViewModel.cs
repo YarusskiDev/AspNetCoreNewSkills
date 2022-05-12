@@ -1,6 +1,7 @@
 ﻿using Dev.Business.Enumeradores;
 using Dev.Business.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,11 @@ namespace DevAppMain.ViewModels
         public Guid Id { get; set; }
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public DateTime Ano { get; set; }
+
+        [HiddenInput]
+        public Guid ConcessionariaId { get; set; }
+        [HiddenInput]
+        public Guid ClienteId { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         [StringLength(7,ErrorMessage ="O campo {0} deve é obrigatório e deve ter no minimo {1} caracteres")]

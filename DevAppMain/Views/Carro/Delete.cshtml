@@ -18,6 +18,12 @@
             @Html.DisplayFor(model => model.Ano)
         </dd>
         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ClienteId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ClienteId)
+        </dd>
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Placa)
         </dt>
         <dd class = "col-sm-10">
@@ -47,6 +53,12 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Status)
         </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Concessionaria_EF)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Concessionaria_EF.Id)
+        </dd class>
     </dl>
     
     <form asp-action="Delete">

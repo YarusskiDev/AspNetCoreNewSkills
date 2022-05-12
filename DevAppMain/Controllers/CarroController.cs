@@ -9,9 +9,12 @@ using DevAppMain.Areas.Identity.Data;
 using DevAppMain.ViewModels;
 using Dev.Business.Interfaces;
 using AutoMapper;
+using Dev.Business.Models;
+using Dev.Business.Enumeradores;
 
 namespace DevAppMain.Controllers
 {
+    //[Route("carro")]
     public class CarroController : Controller
     {
         private readonly ICarroRepositorio _contextCarro;
@@ -31,13 +34,9 @@ namespace DevAppMain.Controllers
         }
 
         // GET: Carro/Details/5
-        public async Task<IActionResult> Details(Guid? id)
+        public async Task<IActionResult> Details(Guid id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
+            
             var carroViewModel = await _contextCarro.Buscar(m => m.Id == id);
                 
             if (carroViewModel == null)
@@ -48,30 +47,30 @@ namespace DevAppMain.Controllers
             return View(carroViewModel);
         }
 
-        //// GET: Carro/Create
-        //public IActionResult Create()
-        //{
-        //    return View();
-        //}
+        // GET: Carro/Create
+        //[HttpGet("criar")]
+        public IActionResult Create()
+        {
+            return View();
+        }
 
-        //// POST: Carro/Create
-        //// To protect from overposting attacks, enable the specific properties you want to bind to.
-        //// For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> Create([Bind("Id,Ano,Placa,Imagem,DataEntrada,DataSaida,Status")] CarroViewModel carroViewModel)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        carroViewModel.Id = Guid.NewGuid();
-        //        _contextCarro.Adicionar(carroViewModel);
-        //        await _contextCarro.SaveChangesAsync();
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    return View(carroViewModel);
-        //}
+     
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(CarroViewModel carroViewModel)
+        {
+            carroViewModel.Status = StatusCarro.ParaVenda;
+            if (ModelState.IsValid)
+            {
+                carroViewModel.Id = Guid.NewGuid();
+                await _contextCarro.Adicionar(_mapper.Map<Carro>(carroViewModel));
+                await _contextCarro.SaveChanges();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(carroViewModel);
+        }
 
-        //// GET: Carro/Edit/5
+        // GET: Carro/Edit/5
         //public async Task<IActionResult> Edit(Guid? id)
         //{
         //    if (id == null)
@@ -79,11 +78,12 @@ namespace DevAppMain.Controllers
         //        return NotFound();
         //    }
 
-        //    var carroViewModel = await _contextCarro.CarroViewModel.FindAsync(id);
+        //    var carroViewModel = await _context.CarroViewModel.FindAsync(id);
         //    if (carroViewModel == null)
         //    {
         //        return NotFound();
         //    }
+        //    ViewData["ConcessionariaId"] = new SelectList(_context.Set<Concessionaria>(), "Id", "Id", carroViewModel.ConcessionariaId);
         //    return View(carroViewModel);
         //}
 
@@ -92,7 +92,7 @@ namespace DevAppMain.Controllers
         //// For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         //[HttpPost]
         //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> Edit(Guid id, [Bind("Id,Ano,Placa,Imagem,DataEntrada,DataSaida,Status")] CarroViewModel carroViewModel)
+        //public async Task<IActionResult> Edit(Guid id, [Bind("Id,Ano,ConcessionariaId,ClienteId,Placa,Imagem,DataEntrada,DataSaida,Status")] CarroViewModel carroViewModel)
         //{
         //    if (id != carroViewModel.Id)
         //    {
@@ -103,8 +103,8 @@ namespace DevAppMain.Controllers
         //    {
         //        try
         //        {
-        //            _contextCarro.Update(carroViewModel);
-        //            await _contextCarro.SaveChangesAsync();
+        //            _context.Update(carroViewModel);
+        //            await _context.SaveChangesAsync();
         //        }
         //        catch (DbUpdateConcurrencyException)
         //        {
@@ -119,6 +119,7 @@ namespace DevAppMain.Controllers
         //        }
         //        return RedirectToAction(nameof(Index));
         //    }
+        //    ViewData["ConcessionariaId"] = new SelectList(_context.Set<Concessionaria>(), "Id", "Id", carroViewModel.ConcessionariaId);
         //    return View(carroViewModel);
         //}
 
@@ -130,7 +131,8 @@ namespace DevAppMain.Controllers
         //        return NotFound();
         //    }
 
-        //    var carroViewModel = await _contextCarro.CarroViewModel
+        //    var carroViewModel = await _context.CarroViewModel
+        //        .Include(c => c.Concessionaria_EF)
         //        .FirstOrDefaultAsync(m => m.Id == id);
         //    if (carroViewModel == null)
         //    {
@@ -145,15 +147,15 @@ namespace DevAppMain.Controllers
         //[ValidateAntiForgeryToken]
         //public async Task<IActionResult> DeleteConfirmed(Guid id)
         //{
-        //    var carroViewModel = await _contextCarro.CarroViewModel.FindAsync(id);
-        //    _contextCarro.CarroViewModel.Remove(carroViewModel);
-        //    await _contextCarro.SaveChangesAsync();
+        //    var carroViewModel = await _context.CarroViewModel.FindAsync(id);
+        //    _context.CarroViewModel.Remove(carroViewModel);
+        //    await _context.SaveChangesAsync();
         //    return RedirectToAction(nameof(Index));
         //}
 
         //private bool CarroViewModelExists(Guid id)
         //{
-        //    return _contextCarro.CarroViewModel.Any(e => e.Id == id);
+        //    return _context.CarroViewModel.Any(e => e.Id == id);
         //}
     }
 }

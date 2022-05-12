@@ -205,11 +205,6 @@ C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\bin\Debug\net
 C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\bin\Debug\net5.0\Dev.Data.dll
 C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\bin\Debug\net5.0\Dev.Data.pdb
 C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\bin\Debug\net5.0\Dev.Business.pdb
-C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\obj\Debug\net5.0\Razor\Views\Carro\Create.cshtml.g.cs
-C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\obj\Debug\net5.0\Razor\Views\Carro\Delete.cshtml.g.cs
-C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\obj\Debug\net5.0\Razor\Views\Carro\Details.cshtml.g.cs
-C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\obj\Debug\net5.0\Razor\Views\Carro\Edit.cshtml.g.cs
-C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\obj\Debug\net5.0\Razor\Views\Carro\Index.cshtml.g.cs
 C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\obj\Debug\net5.0\Razor\Views\Cliente\Create.cshtml.g.cs
 C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\obj\Debug\net5.0\Razor\Views\Cliente\Delete.cshtml.g.cs
 C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\obj\Debug\net5.0\Razor\Views\Cliente\Details.cshtml.g.cs
@@ -231,3 +226,8 @@ C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\bin\Debug\net
 C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\obj\Debug\net5.0\Razor\Views\Carro\Create.cshtml.g.cs
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\obj\Debug\net5.0\Razor\Views\Carro\Delete.cshtml.g.cs
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\obj\Debug\net5.0\Razor\Views\Carro\Details.cshtml.g.cs
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\obj\Debug\net5.0\Razor\Views\Carro\Edit.cshtml.g.cs
+C:\Users\crist\OneDrive\Área de Trabalho\GItASPNETCORE\DevAppMain\obj\Debug\net5.0\Razor\Views\Carro\Index.cshtml.g.cs
